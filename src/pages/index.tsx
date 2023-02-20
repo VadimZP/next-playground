@@ -25,7 +25,7 @@ export default function Home({ data }) {
 export async function getServerSideProps({ res }) {
   res.setHeader(
     'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
+    'kek, s-maxage=10, stale-while-revalidate=59'
   )
 
   const response = await fetch('https://jsonplaceholder.typicode.com/users/1')
